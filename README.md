@@ -19,7 +19,7 @@ The script requires the following file(s).
     
 Files:<br /><br />
 &nbsp;&nbsp;&nbsp;A vcf file (can be compressed)<br />
-&nbsp;&nbsp;&nbsp;(Optional) A population file (not tested).  Format: individual(tab)population (two letter for population based on Relate documentation)
+&nbsp;&nbsp;&nbsp;(Optional) A population file (not tested).  Format: individual-tab-population (two letter for population based on Relate documentation)
 
 <!-- usage -->
 ## Usage
