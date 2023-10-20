@@ -53,7 +53,8 @@ class OpenVcf():
             try:
                 self.line = self.line.decode('utf-8')
             except:
-                pass          
+                pass
+            self.line = self.line.rstrip('\n')            
             if not re.search("^#", self.line):
                 self.referenceAllele = 4
                 self.altAllele = 4
@@ -101,7 +102,8 @@ class OpenPop():
             try:
                 self.line = self.line.decode('utf-8')
             except:
-                pass          
+                pass
+            self.line = self.line.rstrip('\n')             
             if not re.search("^#", self.line):
                 self.individual, self.pop = self.line.split()
                 if self.individual in Variables.population:
